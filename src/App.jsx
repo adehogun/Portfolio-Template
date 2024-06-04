@@ -7,6 +7,7 @@ import {
   Navbar,
   Tech,
   Projects,
+  // Map
 } from './components';
 
 const App = () => {
@@ -14,6 +15,7 @@ const App = () => {
     <BrowserRouter>
       <div className="relative z-0">
         <div>
+          {/* <Map/> */}
           <Navbar />
           <Hero />
         </div>
