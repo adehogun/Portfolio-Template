@@ -70,7 +70,7 @@ const services = [
 const technologies = [
   {
     name: 'HTML 5',
-    icon: html,
+    icon: html, 
   },
   {
     name: 'CSS 3',
@@ -128,33 +128,40 @@ const technologies = [
 
 const experiences = [
   {
-    title: 'Front-End Developer',
-    company_name: 'Cover Hunt',
+    title: 'Learning Program Designer',
+    company_name: 'Frankfurt School of Finance and Management',
     icon: coverhunt,
     iconBg: '#333333',
-    date: 'Aug 2021 - Feb 2022',
+    date: 'Nov 2021 - Oct 2023',
   },
   {
-    title: 'Mentor (Volunteer)',
-    company_name: 'Microverse',
+    title: 'Consultant – Safeguards Training E-Learning',
+    company_name: 'International Atomic Energy Agency',
     icon: microverse,
     iconBg: '#333333',
-    date: 'Mar 2022 - May 2022',
+    date: 'Feb 2021 - Sept 2021',
   },
   {
-    title: 'Junior Software Engineer',
-    company_name: 'Kelhel',
+    title: 'E-learning Designer',
+    company_name: 'Freelance',
     icon: kelhel,
     iconBg: '#333333',
-    date: 'May 2022 - Oct 2022',
+    date: 'Aug 2020 - Jan 2021',
   },
   {
-    title: 'Full Stack Developer',
-    company_name: 'Diversity Cyber Council',
+    title: 'Business Consultant',
+    company_name: 'IMC AG',
     icon: dcc,
     iconBg: '#333333',
-    date: 'Sep 2022 - Present',
+    date: 'Jan 2021 - Jul 2020',
   },
+  { title: 'E-learning Developer',
+    company_name: 'Robert Bosch',
+    icon: dcc,
+    iconBg: '##0891b2',
+    date: 'Sep 2018 - Feb 2019',
+    
+  }
 ];
 
 const projects = [
