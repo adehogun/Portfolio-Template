@@ -27,7 +27,7 @@ import {
   dcc,
   kelhel,
   microverse,
-  dropdown
+  
 } from '../assets';
 
 export const navLinks = [
@@ -48,7 +48,7 @@ export const navLinks = [
 const services = [
   {
     title: 'Databases',
-    icon: frontend, dropdown
+    icon: frontend, 
     
   },
   {

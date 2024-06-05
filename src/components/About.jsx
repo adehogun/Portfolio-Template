@@ -43,7 +43,7 @@ const About = () => {
     <div className="-mt-[6rem]">
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>About</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
+        {/* <h2 className={styles.sectionHeadText}>Overview.</h2> */}
       </motion.div>
 
       <motion.p
@@ -59,7 +59,7 @@ const About = () => {
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
       </div>
-      <button>open</button>
+      {/* <button>open</button> */}
     </div>
   );
 };
