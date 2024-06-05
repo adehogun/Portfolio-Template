@@ -1,7 +1,8 @@
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
-import { styles } from '../styles';
-import { navLinks } from '../constants';
+// import { Link } from 'react-router-dom';
+// import { styles } from '../styles';
+import "../index.css"
+// import { navLinks } from '../constants';
 
 
 const Hero = () => {
@@ -20,7 +21,7 @@ const Hero = () => {
         overflow-hidden">
         <div
           className={`absolute inset-0 sm:top-[250px] top-[150px] 
-          lg:top-[150px] xl:top-[250px] ${styles.paddingX} 
+          lg:top-[150px] xl:top-[250px] 
           max-w-7xl mx-auto flex flex-row items-start
           justify-between gap-3`}>
           <div className="flex flex-col justify-center items-center ml-3">
@@ -30,18 +31,16 @@ const Hero = () => {
 
           <div>
             <h1
-              className={`${styles.heroHeadText} text-white font-poppins`}>
-              Hi, there!
-              I'm{' '}
+              className="text-white font-poppins text-6xl" >
+              Hi, there! <br />
+             
               <span
-                className="lg:text-battleGray sm:text-[90px] 
-                text-eerieBlack text-[50px] font-mova
-                font-extrabold">
-                Adewale
+                className="text-gray-400 font-bold">
+                I'm{' '}Adewale 
               </span>
             </h1>
-            <p className={`${styles.heroSubText} mt-2 text-white`}>
-             An enthusiastic <span className='bg-red-500'>web full-stack developer</span> <br className="sm:block hidden" />
+            <p className="mt-2 text-white animate-bounce" >
+             An enthusiastic <br /> <span className='bg-red-500 text-write'>web full-stack developer</span>
               
             </p>
           </div>
@@ -78,7 +77,7 @@ const Hero = () => {
         {/* Your image comes here. Feel free to remove image if you don't plan to have one.*/}
         <div>
           <img
-            className="absolute bottom-0 mt-10 right-[450px] border-spacing-10 rounded-full top-[200px] max-w-xs object-cover"
+            className="absolute bottom-0  right-[400px] border-spacing-10 rounded-full top-[100px] max-w-md object-cover"
             src="./src/assets/personal/profile.jpg"
             alt="myprofile" 
           />

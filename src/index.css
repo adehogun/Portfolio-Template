@@ -143,6 +143,34 @@
   transform: translateZ(0);
 }
 
+/* styles.css */
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.animate-bounce {
+  animation: bounce 3s forwards; /* Change duration to 3 seconds and set forwards to retain the final state */
+}
+
+@keyframes write {
+  from {
+    width:2;
+  }
+}
+
+.text-write {
+  animation: write 8s steps(40, end) infinite; /* Adjust duration and steps as needed */
+}
+
+
+
+
 @keyframes mulShdSpin {
   0%,
   100% {

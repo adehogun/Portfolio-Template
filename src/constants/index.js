@@ -27,16 +27,17 @@ import {
   dcc,
   kelhel,
   microverse,
+  
 } from '../assets';
 
 export const navLinks = [
   {
     id: 'about',
-    title: 'About',
+    title: 'About Me',
   },
   {
     id: 'projects',
-    title: 'Projects',
+    title: 'My Projects',
   },
   {
     id: 'contact',
@@ -46,21 +47,24 @@ export const navLinks = [
 
 const services = [
   {
-    title: 'Frontend Developer',
-    icon: frontend,
+    title: 'Databases',
+    icon: frontend, 
+    
   },
   {
-    title: 'Backend Developer',
+    title: 'Frontend',
     icon: backend,
   },
   {
-    title: 'UI/UX Design',
+    title: 'Backend',
     icon: ux,
   },
   {
-    title: 'Software Prototyping',
+    title: 'Restful APIs',
     icon: prototyping,
   },
+
+  
 ];
 
 const technologies = [
