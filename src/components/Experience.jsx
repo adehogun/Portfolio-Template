@@ -9,6 +9,7 @@ import { experiences } from '../constants';
 import { SectionWrapper } from '../hoc';
 import { download, downloadHover, resume } from '../assets';
 import { textVariant } from '../utils/motion';
+// import ogunfusika from "../assets";
 
 const ExperienceCard = ({ experience }) => (
   <VerticalTimelineElement
@@ -23,7 +24,7 @@ const ExperienceCard = ({ experience }) => (
     }}
     date={
       <div>
-        <h3 className="text-dim text-[18px] font-bold font-beckman">
+        <h3 className="text-cyan text-[18px] font-bold font-beckman">
           {experience.date}
         </h3>
       </div>
@@ -39,17 +40,18 @@ const ExperienceCard = ({ experience }) => (
       </div>
     }>
     <div>
-      <h3 className="text-jetLight text-[24px] font-bold font-beckman tracking-[2px]">
+      <h3 className="text-indigo-800 text-[24px] font-bold font-beckman tracking-[2px]" style={{textTransform: "none"}}>
         {experience.title}
       </h3>
       <p
         className="text-taupe text-[22px] font-semibold font-overcameBold tracking-[1px]"
-        style={{ margin: 0 }}>
+        style={{ margin: 0 , textTransform: "none"}}>
         {experience.company_name}
       </p>
     </div>
   </VerticalTimelineElement>
 );
+
 
 const Experience = () => {
   return (
@@ -102,7 +104,7 @@ const Experience = () => {
               ease-in-out"
               onClick={() =>
                 window.open(
-                  'resume link', //paste the link to your resume here
+                  'ogunfusika.pdf', //paste the link to your resume here
                   '_blank'
                 )
               }
