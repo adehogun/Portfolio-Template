@@ -8,7 +8,7 @@ import { Button } from '@material-tailwind/react';
 
 const Tech = () => {
   return (
-    <>
+    <div className='items-center'>
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubTextLight}>Tech</p>
         <h2 className={styles.sectionHeadTextLight}>Stacks</h2>
@@ -105,7 +105,7 @@ const Tech = () => {
      </div> 
 
       
-    </>
+    </div>
   );
 };
 

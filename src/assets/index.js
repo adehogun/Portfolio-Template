@@ -22,6 +22,7 @@ import menu from './icons/menu.png';
 import resume from './icons/resume.png';
 import send from './icons/send.png';
 import sendHover from './icons/sendHover.png';
+import olic from "./projects/olic.png";
 
 import css from './tech/css.png';
 import docker from './tech/docker.png';

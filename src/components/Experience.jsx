@@ -55,7 +55,7 @@ const ExperienceCard = ({ experience }) => (
 
 const Experience = () => {
   return (
-    <>
+    <div className='flex items-center'>
       <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText} sm:pl-16 pl-[2rem]`}>
           What I've done so far
@@ -129,7 +129,7 @@ const Experience = () => {
           </VerticalTimelineElement>
         </VerticalTimeline>
       </div>
-    </>
+    </div>
   );
 };
 

@@ -28,7 +28,9 @@ import {
   kelhel,
   microverse,
   
+  
 } from '../assets';
+import { textVariant } from '../utils/motion';
 
 export const navLinks = [
   {
@@ -167,29 +169,31 @@ const experiences = [
 const projects = [
   {
     id: 'project-1',
-    name: 'KomiKult',
-    description: 'A comic characters list app that displays Marvel characters.',
-    tags: [
-      {
-        name: 'react',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'mongodb',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'tailwind',
-        color: 'pink-text-gradient',
-      },
-    ],
+    name: 'Olic',
+    description: 'A small online shop that shop according to male, female and children#s clothe with stripe checkout and login authentication',
+    // tags: [
+    //   {
+    //     name: 'react',
+    //     color: 'blue-text-gradient',
+    //   },
+    //   {
+    //     name: 'mongodb',
+    //     color: 'green-text-gradient',
+    //   },
+    //   {
+    //     name: 'tailwind',
+    //     color: 'pink-text-gradient',
+    //   },
+    // ],
+
+
     image: komikult,
-    repo: 'https://github.com/shaqdeff/KomiKult',
-    demo: 'https://shaqdeff.github.io/KomiKult/',
+    repo: 'https://github.com/adehogun/olic.git',
+    demo: 'https://myportfolio-1-cn9f.onrender.com/',
   },
   {
     id: 'project-2',
-    name: 'Leaderboard',
+    name: 'BreatitDown',
     description:
       'A leaderboard list app that displays scores submitted by different players.',
     tags: [
@@ -254,29 +258,7 @@ const projects = [
     repo: 'https://github.com/shaqdeff/Movie-Metro',
     demo: 'https://movie-metro.netlify.app/',
   },
-  {
-    id: 'project-5',
-    name: 'Nyeusi Fest Site',
-    description:
-      'This is a demo concert website for a music festival called Nyeusi.',
-    tags: [
-      {
-        name: 'nextjs',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'supabase',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'css',
-        color: 'pink-text-gradient',
-      },
-    ],
-    image: nyeusi,
-    repo: 'https://github.com/shaqdeff/Nyeusi-Fest-Site',
-    demo: 'https://shaqdeff.github.io/Nyeusi-Fest-Site/',
-  },
+  
 ];
 
 export { services, technologies, experiences, projects };
