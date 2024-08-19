@@ -1,8 +1,9 @@
 import { motion } from 'framer-motion';
 // import { Link } from 'react-router-dom';
-import { styles } from '../styles';
-import "../index.css"
+// import { styles } from '../styles';
+// import "../index.css"
 // import { navLinks } from '../constants';
+import bigProfile from "../assets/personal/profile.jpg";
 
 
 const Hero = () => {
@@ -39,10 +40,13 @@ const Hero = () => {
                 I'm{' '}Adewale 
               </span>
             </h1>
-            <p className="mt-4 text-white animate-bounce" >
-             An enthusiastic <br /> <span className='bg-red-500 text-write'>web full-stack developer</span>
+            <div className='text-write text-4xl bg-red-500'>
+               <p className="mt-4 text-white animate-bounce" >
+      < span>Web full-stack developer</span>
               
             </p>
+            </div>
+           
           </div>
           <div
             className="w-screen flex flex-col items-start 
@@ -75,10 +79,10 @@ const Hero = () => {
         </div>
 
         {/* Your image comes here. Feel free to remove image if you don't plan to have one.*/}
-        <div className='flex justify-end items-center p-24 m-20'>
+        <div className='flex justify-end items-center'>
           <img
-            className=" "
-            src="./src/assets/personal/profile.jpg"
+            className="big-picture "
+            src={bigProfile}
             alt="myprofile" 
           />
         </div>

@@ -14,17 +14,14 @@ import { textVariant } from '../utils/motion';
 const ExperienceCard = ({ experience }) => (
   <VerticalTimelineElement
     contentStyle={{
-      background: '#eaeaec',
-      color: '#292929',
-      boxShadow:
-        'rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px',
+      
     }}
     contentArrowStyle={{
-      borderRight: '7px solid  #232631',
+      borderRight: '10px solid  #232631',
     }}
     date={
       <div>
-        <h3 className="text-cyan text-[18px] font-bold font-beckman">
+        <h3 className="text-black text-[18px] font-bold font-beckman ml-4">
           {experience.date}
         </h3>
       </div>
@@ -44,7 +41,7 @@ const ExperienceCard = ({ experience }) => (
         {experience.title}
       </h3>
       <p
-        className="text-taupe text-[22px] font-semibold font-overcameBold tracking-[1px]"
+        className="text-black text-[22px]tracking-[1px]"
         style={{ margin: 0 , textTransform: "none"}}>
         {experience.company_name}
       </p>
@@ -56,14 +53,14 @@ const ExperienceCard = ({ experience }) => (
 const Experience = () => {
   return (
     <div className='flex items-center'>
-      <motion.div variants={textVariant()}>
+      {/* <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText} sm:pl-16 pl-[2rem]`}>
           What I've done so far
         </p>
         <h2 className={`${styles.sectionHeadText} sm:pl-16 pl-[2rem]`}>
           Work Experience.
         </h2>
-      </motion.div>
+      </motion.div> */}
 
       <div className="mt-20 flex flex-col">
         <VerticalTimeline className="vertical-timeline-custom-line">
@@ -72,8 +69,8 @@ const Experience = () => {
           ))}
           <VerticalTimelineElement
             contentStyle={{
-              background: '#eaeaec',
-              color: '#292929',
+              background: '',
+              color: '#',
               boxShadow:
                 'rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px',
               display: 'flex',
@@ -83,7 +80,7 @@ const Experience = () => {
             contentArrowStyle={{
               borderRight: '7px solid  #232631',
             }}
-            iconStyle={{ background: '#333333' }}
+            iconStyle={{ background: '#' }}
             icon={
               <div className="flex justify-center items-center w-full h-full">
                 <img
@@ -104,7 +101,7 @@ const Experience = () => {
               ease-in-out"
               onClick={() =>
                 window.open(
-                  'ogunfusika.pdf', //paste the link to your resume here
+                  'cv_ogunfusika.pdf', //paste the link to your resume here
                   '_blank'
                 )
               }

@@ -117,7 +117,7 @@ const Projects = () => {
   const [active, setActive] = useState('project-2');
 
   return (
-    <div className="-mt-[20rem]">
+    <div>
       <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText} `}>Case Studies</p>
         <h2 className={`${styles.sectionHeadTextLight}`}>Projects.</h2>

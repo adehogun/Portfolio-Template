@@ -164,8 +164,11 @@
   }
 }
 
-.text-write {
+.text-write span {
   animation: write 8s steps(40, end) infinite; /* Adjust duration and steps as needed */
+  width: 480px;
+  margin-right: 10px;
+
 }
 
 
@@ -246,4 +249,16 @@
       -1.8em 1.8em 0 0em rgba(255, 255, 255, 0.5),
       -2.6em 0em 0 0em rgba(255, 255, 255, 0.7), -1.8em -1.8em 0 0em #ffffff;
   }
+}
+
+
+
+.tech-items-wrapper {
+  margin: 2px;
+  margin-bottom: 4%;
+}
+
+
+.big-picture {
+  margin-top: 19%;
 }
