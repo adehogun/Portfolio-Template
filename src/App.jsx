@@ -30,7 +30,7 @@ const App = () => {
           <Tech />
         </div>
 
-<div >
+<div>
    <Projects />
 </div>
        
@@ -41,7 +41,7 @@ const App = () => {
             <Experience />
           </div>
         </div>
-        <div className="relative z-0 bg-gray-500">
+        <div className="relative z-0 bg-black">
           <Contact />
         </div>
       </div>

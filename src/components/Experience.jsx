@@ -9,6 +9,7 @@ import { experiences } from '../constants';
 import { SectionWrapper } from '../hoc';
 import { download, downloadHover, resume } from '../assets';
 import { textVariant } from '../utils/motion';
+import myCv from "../assets/company/mycv.png";
 // import ogunfusika from "../assets";
 
 const ExperienceCard = ({ experience }) => (
@@ -21,7 +22,7 @@ const ExperienceCard = ({ experience }) => (
     }}
     date={
       <div>
-        <h3 className="text-black text-[18px] font-bold font-beckman ml-4">
+        <h3 className="text-black text-[18px] font-bold font-beckman">
           {experience.date}
         </h3>
       </div>
@@ -37,7 +38,7 @@ const ExperienceCard = ({ experience }) => (
       </div>
     }>
     <div>
-      <h3 className="text-indigo-800 text-[24px] font-bold font-beckman tracking-[2px]" style={{textTransform: "none"}}>
+      <h3 className="text-indigo-800 text-[32px] font-bold font-beckman tracking-[2px]" style={{textTransform: "none"}}>
         {experience.title}
       </h3>
       <p
@@ -65,7 +66,7 @@ const Experience = () => {
       <div className="mt-20 flex flex-col">
         <VerticalTimeline className="vertical-timeline-custom-line">
           {experiences.map((experience, index) => (
-            <ExperienceCard key={index} experience={experience} />
+            <ExperienceCard key={index} experience={experience}  />
           ))}
           <VerticalTimelineElement
             contentStyle={{
@@ -84,7 +85,7 @@ const Experience = () => {
             icon={
               <div className="flex justify-center items-center w-full h-full">
                 <img
-                  src={resume}
+                  src={myCv}
                   alt="resume"
                   className="w-[45%] h-[45%] object-contain"
                 />

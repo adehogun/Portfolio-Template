@@ -28,9 +28,14 @@ import {
   kelhel,
   microverse,
 
+
+
   
   
 } from '../assets';
+
+import myPic from "../assets/company/mypic.png";
+
 import { textVariant } from '../utils/motion';
 
 export const navLinks = [
@@ -143,11 +148,13 @@ const experiences = [
     icon: microverse,
     iconBg: '#333333',
     date: 'Feb 2021 - Sept 2021',
+    dateStyle: { margin: '10px 0' }, // add your margin here
   },
+    
   {
     title: 'E-learning Designer',
     company_name: 'Freelance',
-    icon: kelhel,
+    icon: myPic,
     iconBg: '#333333',
     date: 'Aug 2020 - Jan 2021',
   },
@@ -160,7 +167,7 @@ const experiences = [
   },
   { title: 'E-learning Developer',
     company_name: 'Robert Bosch',
-    icon: dcc,
+    icon: kelhel,
     iconBg: '##0891b2',
     date: 'Sep 2018 - Feb 2019',
     
@@ -171,7 +178,7 @@ const projects = [
   {
     id: 'project-1',
     name: 'Olic',
-    description: 'A small online shop that shop according to male, female and children#s clothe with stripe checkout and login authentication',
+    description: 'A small online shop built with React listing shopping items according to gender categories with a checkout route using stripe.',
     // tags: [
     //   {
     //     name: 'react',

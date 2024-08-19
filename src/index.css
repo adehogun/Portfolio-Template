@@ -251,7 +251,7 @@
   }
 }
 
-
+Responsiveness about
 
 .tech-items-wrapper {
   margin: 2px;
@@ -262,3 +262,84 @@
 .big-picture {
   margin-top: 19%;
 }
+
+
+Global Styles */
+.card-gradient {
+  background: linear-gradient(45deg, #f3ec78, #af4261);
+} 
+
+.bg-jetLight {
+  background-color: #333333;
+}
+
+.text-taupe {
+  color: #8d8d8d;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 640px) {
+  /* Small screens like mobile phones */
+  .card-gradient {
+    width: 100%;
+    padding: 5px;
+  }
+
+  .bg-jetLight {
+    padding: 10px;
+    min-height: 150px;
+  }
+
+  .text-[18px] {
+    font-size: 16px;
+  }
+
+  .leading-[30px] {
+    line-height: 24px;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  /* Tablets */
+  .card-gradient {
+    width: 70%;
+    padding: 10px;
+  }
+
+  .bg-jetLight {
+    padding: 20px;
+    min-height: 180px;
+  }
+
+  .text-[18px] {
+    font-size: 17px;
+  }
+
+  .leading-[30px] {
+    line-height: 28px;
+  }
+}
+
+@media (min-width: 1025px) {
+  /* Desktops */
+  .card-gradient {
+    width: 30%;
+    padding: 15px;
+  }
+
+  .bg-jetLight {
+    padding: 15px;
+    min-height: 150px;
+  }
+
+  .text-[18px] {
+    font-size: 18px;
+  }
+
+  .leading-[30px] {
+    line-height: 30px;
+  }
+}
+
+
+

@@ -39,7 +39,7 @@ const Navbar = () => {
             <li
               key={nav.id}
               className={`${
-                active === nav.title ? 'text-french' : 'text-eerieBlack'
+                active === nav.title ? 'text-black' : 'text-eerieBlack'
               } hover:text-taupe text-[21px] font-medium font-mova 
                 uppercase tracking-[3px] cursor-pointer nav-links`}
               onClick={() => setActive(nav.title)}>
@@ -65,16 +65,16 @@ const Navbar = () => {
                 />
               </div>
               <ul
-                className="list-none flex flex-col -gap-[1rem] 
+                className="flex flex-col -gap-[1rem] 
                 items-start justify-end mt-[10rem] -ml-[35px]">
                 {navLinks.map((nav) => (
                   <li
                     id={nav.id}
                     key={nav.id}
                     className={`${
-                      active === nav.title ? 'text-french' : 'text-eerieBlack'
+                      active === nav.title ? 'text-black' : 'text-black'
                     } text-[88px] font-bold font-arenq 
-                      uppercase tracking-[1px] cursor-pointer`}
+                      lowercase tracking-[1px] cursor-pointer`}
                     onClick={() => {
                       setToggle(!toggle);
                       setActive(nav.title);

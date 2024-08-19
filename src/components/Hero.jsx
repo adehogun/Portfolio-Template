@@ -8,14 +8,15 @@ import bigProfile from "../assets/personal/profile.jpg";
 
 const Hero = () => {
   return (
-    <div className='flex items-center'>
-      <div className="absolute top-0 left-0 z-0 h-[100vh] w-screen">
-        <img
-          src="./src/assets/backgrounds/jeremy.jpg"
-          alt="world map"
-          className="w-full h-full"
-        />
-      </div>
+    <div className='relative flex items-center justify-center'>
+    {/* Background Image */}
+    <div className="absolute top-0 left-0 z-0 w-full h-full">
+      <img
+        src="./src/assets/backgrounds/jeremy.jpg"
+        alt="world map"
+        className="object-cover w-full h-full"
+      />
+    </div>
     
       <section
         className="relative flex sm:flex-row flex-col w-full h-screen mx-auto 
@@ -30,24 +31,21 @@ const Hero = () => {
             <div className="w-1 sm:h-80 h-40 bw-gradient sm:hidden" />
           </div>
 
-          <div>
-            <h1
-              className="text-white font-poppins text-8xl" >
-              Hi, there! <br />
-             
-              <span
-                className="text-gray-400 font-bold">
-                I'm{' '}Adewale 
-              </span>
-            </h1>
-            <div className='text-write text-4xl bg-red-500'>
-               <p className="mt-4 text-white animate-bounce" >
-      < span>Web full-stack developer</span>
-              
-            </p>
-            </div>
-           
-          </div>
+          <div className="text-center px-4 sm:px-6 md:px-8">
+  <h1
+    className="text-white font-poppins text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl">
+    Hi, there! <br />
+    <span className="text-gray-400 font-bold">
+      I'm {' '}Adewale
+    </span>
+  </h1>
+  <div className="mt-4 text-center bg-red-500 py-2 px-4 rounded-lg">
+    <p className="text-white text-xl sm:text-2xl md:text-3xl animate-bounce">
+      <span>Web Full-Stack Developer</span>
+    </p>
+  </div>
+</div>
+
           <div
             className="w-screen flex flex-col items-start 
             justify-center sm:-ml-[3rem] xxs:mt-4"></div>
@@ -55,23 +53,16 @@ const Hero = () => {
           <div></div>
         </div>
 
-        <div
-          className="absolute xs:bottom-10 bottom-32 w-full 
-          flex justify-center items-center">
+
+        
+
+        <div className="absolute bottom-10 md:bottom-16 w-full flex justify-center items-center">
           <a href="#about">
             <div
-              className="w-[20px] h-[64px] rounded-3xl border-4 
-           
-            justify-center items-start ">
+              className="w-[35px] h-[60px] rounded-2xl border-4 border-taupe flex justify-center items-start">
               <motion.div
-                animate={{
-                  y: [0, 24, 0],
-                }}
-                transition={{
-                  duration: 1.5,
-                  repeat: Infinity,
-                  repeatType: 'loop',
-                }}
+                animate={{ y: [0, 24, 0] }}
+                transition={{ duration: 1.5, repeat: Infinity, repeatType: 'loop' }}
                 className="w-3 h-3 rounded-full bg-taupe mb-1"
               />
             </div>
@@ -79,13 +70,15 @@ const Hero = () => {
         </div>
 
         {/* Your image comes here. Feel free to remove image if you don't plan to have one.*/}
-        <div className='flex justify-end items-center'>
+         <div className='flex justify-end items-center'>
           <img
             className="big-picture "
             src={bigProfile}
             alt="myprofile" 
           />
-        </div>
+        </div> 
+
+
       </section>
     </div>
   );
