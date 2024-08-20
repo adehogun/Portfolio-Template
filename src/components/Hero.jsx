@@ -11,11 +11,11 @@ const Hero = () => {
     <div className='relative flex items-center justify-center'>
     {/* Background Image */}
     <div className="absolute top-0 left-0 z-0 w-full h-full">
-      <img
+      {/* <img
         src="./src/assets/backgrounds/jeremy.jpg"
         alt="world map"
         className="object-cover w-full h-full"
-      />
+      /> */}
     </div>
     
       <section
