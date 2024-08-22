@@ -37,6 +37,7 @@ const Hero = () => {
     Hi, there! <br />
     <span className="text-gray-400 font-bold">
       I'm {' '}Adewale
+      
     </span>
   </h1>
   <div className="mt-4 text-center bg-red-500 py-2 px-4 rounded-lg">
@@ -70,13 +71,12 @@ const Hero = () => {
         </div>
 
         {/* Your image comes here. Feel free to remove image if you don't plan to have one.*/}
-         <div className='flex justify-end items-center'>
-          <img
-            className="big-picture "
-            src={bigProfile}
-            alt="myprofile" 
-          />
-        </div> 
+        <div className='flex justify-end items-center'>
+    <img
+        src={bigProfile}
+        alt="myprofile" 
+        className="big-picture rounded-full object-cover"/>
+</div>
 
 
       </section>

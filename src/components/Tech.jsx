@@ -6,7 +6,7 @@ import { textVariant } from '../utils/motion';
 import { Button } from '@material-tailwind/react';
 import { javascript, reactjs, html, nodejs } from '../assets';
 import mySql from "../assets/tech/sql.png";
-import myMongoDb from "../assets/tech/Mongo.png";
+// import myMongoDb from "../assets/tech/Mongo.png";
 import myGitHub from "../assets/tech/github.png";
 import myCss from "../assets/tech/css.png";
 import myTailwind from "../assets/tech/tailwind.png";
@@ -50,7 +50,7 @@ const Tech = () => {
 
           <Button className='bg-green-700 flex justify-between items-center p-4 sm:p-6 md:p-8 lg:p-10'>
             MongoDb
-            <img src={myMongoDb} className='w-8 h-7 bg-white rounded'/>
+            {/* <img src={myMongoDb} className='w-8 h-7 bg-white rounded'/> */}
           </Button>
 
           <Button className='bg-customSlate flex justify-between items-center p-4 sm:p-6 md:p-8 lg:p-10'>

@@ -50,7 +50,7 @@ const About = () => {
       <motion.p
         variants={fadeIn('', '', 0.1, 1)}
         className="mt-4 text-black text-[18px] max-w-3xl leading-[30px]">
-       Before diving into full stack web and app development, I was always intrigued by using coding to bring my ideas to life in digital products. The transition from a learning developer to a full stack developer has been a remarkable journey for me. Outside of coding, I enjoy hiking, skating, and cooking, which help me find inspiration and relieve stress.
+       Before I got into full-stack web and app development, I have been always fascinated by how coding could turn my ideas into digital reality. The journey from being a newbie to becoming a full-stack developer has been an amazing ride. When I’m not coding, I love hiking, skating, and cooking—they’re my go-to ways to unwind and get inspired.
       </motion.p>
 
       <div className="mt-10 flex flex-wrap gap-10">

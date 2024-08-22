@@ -260,7 +260,11 @@ Responsiveness about
 
 
 .big-picture {
-  margin-top: 19%;
+  /* margin-top: 19%; */
+  margin-right: 70px;
+  width: 40%;
+  
+
 }
 
 
@@ -342,4 +346,6 @@ Global Styles */
 }
 
 
-
+.mongo {
+  width: 72%;
+}
