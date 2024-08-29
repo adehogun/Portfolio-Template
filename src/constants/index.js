@@ -43,11 +43,11 @@ import { textVariant } from '../utils/motion';
 export const navLinks = [
   {
     id: 'about',
-    title: 'About Me',
+    title: 'About',
   },
   {
     id: 'projects',
-    title: 'My Projects',
+    title: 'Projects',
   },
   {
     id: 'contact',

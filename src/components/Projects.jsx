@@ -110,7 +110,7 @@ const Projects = () => {
   const [active, setActive] = useState('project-2');
 
   return (
-    <div className="relative px-4 sm:px-6 md:px-8">
+    <div className="relative mt-36 px-4 sm:px-6 md:px-8">
       <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText} `}>Case Studies</p>
         <h2 className={`${styles.sectionHeadTextLight}`}>Projects.</h2>
@@ -131,17 +131,18 @@ const Projects = () => {
         whileInView="show"
         viewport={{ once: false, amount: 0.25 }}
         className={`${styles.innerWidth} mx-auto flex flex-col`}>
-        <div className="mt-[20px] sm:mt-[30px] md:mt-[40px] flex flex-col lg:flex-row min-h-[50vh] sm:min-h-[60vh] md:min-h-[70vh] gap-4 sm:gap-5 
-          mb-10 sm:mb-16 md:mb-20 lg:mb-24">
-          {projects.map((project, index) => (
-            <ProjectCard
-              key={project.id}
-              index={index}
-              {...project}
-              active={active}
-              handleClick={setActive}
-            />
-          ))}
+       {/* Adjust the margin-top classes here */}
+    <div className="mt-12 sm:mt-16 md:mt-20 lg:mt-24 flex flex-col lg:flex-row min-h-[50vh] sm:min-h-[60vh] md:min-h-[70vh] gap-4 sm:gap-5 
+      mb-10 sm:mb-16 md:mb-20 lg:mb-24">
+      {projects.map((project, index) => (
+        <ProjectCard
+          key={project.id}
+          index={index}
+          {...project}
+          active={active}
+          handleClick={setActive}
+        />
+      ))}
         </div>
       </motion.div>
     </div>
