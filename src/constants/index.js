@@ -36,6 +36,8 @@ import {
 
 import myPic from "../assets/company/mypic.png";
 
+import myOlic from "../assets/projects/olic.png";
+
 import { textVariant } from '../utils/motion';
 
 export const navLinks = [
@@ -179,23 +181,7 @@ const projects = [
     id: 'project-1',
     name: 'Olic',
     description: 'A small online shop built with React listing shopping items according to gender categories with a checkout route using stripe.',
-    // tags: [
-    //   {
-    //     name: 'react',
-    //     color: 'blue-text-gradient',
-    //   },
-    //   {
-    //     name: 'mongodb',
-    //     color: 'green-text-gradient',
-    //   },
-    //   {
-    //     name: 'tailwind',
-    //     color: 'pink-text-gradient',
-    //   },
-    // ],
-
-
-    image: komikult,
+    image: myOlic,
     repo: 'https://github.com/adehogun/olic.git',
     demo: 'https://myportfolio-1-cn9f.onrender.com/.',
   },

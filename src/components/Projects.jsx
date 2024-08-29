@@ -26,26 +26,25 @@ const ProjectCard = ({
       min-h-[280px] sm:min-h-[320px] md:min-h-[360px] cursor-pointer card-shadow`}
       onClick={() => handleClick(id)}>
       <div
-        className="absolute top-0 left-0 z-10 bg-jetLight 
-      h-full w-full opacity-[0.5] rounded-[24px]"></div>
+        className="absolute top-0 left-0  bg-jetLight 
+      h-full w-full box-size opacity-[0.5] rounded-[24px]"></div>
+      <img
+        src={image}
+        alt={name}
+        className="absolute w-full h-full object-cover rounded-[25px]"
+      />
 
       {active !== id ? (
         <div className="flex items-center justify-start pr-[1rem] sm:pr-[2rem] md:pr-[2.5rem]">
    
-          <h3
-            className="font-extrabold font-beckman uppercase w-[120px] sm:w-[150px] md:w-[180px] h-[20px] sm:h-[24px] md:h-[28px]
-        whitespace-nowrap text-[14px] sm:text-[16px] md:text-[18px] text-timberWolf tracking-[1px]
-        absolute z-0 lg:bottom-[3rem] sm:bottom-[4rem] md:bottom-[5rem] lg:rotate-[-90deg] lg:origin-[0,0]
-        leading-none z-20 mb-20">
-            {name}
-          </h3>
+          
          
         </div>
       ) : (
         <>
           <div
             className="absolute bottom-0 p-4 sm:p-6 md:p-8 justify-start w-full 
-            flex-col bg-[rgba(122,122,122,0.5)] rounded-b-[24px] z-20">
+            flex-col bg-white rounded-b-[24px] z-20">
             <div className="absolute inset-0 flex justify-end m-2 sm:m-3">
               
               <div
@@ -63,11 +62,11 @@ const ProjectCard = ({
 
             <h2
               className="font-bold text-[18px] sm:text-[22px] md:text-[26px] 
-              text-timberWolf uppercase font-beckman mt-[-0.5rem] sm:mt-[-0.75rem]">
+              text-black uppercase font-beckman mt-[-0.5rem] sm:mt-[-0.75rem]">
               {name}
             </h2>
             <p
-              className="text-silver text-[10px] sm:text-[12px] 
+              className="text-black text-[10px] sm:text-[12px] 
               max-w-full sm:max-w-3xl leading-[14px] sm:leading-[18px] md:leading-[20px]
               font-poppins tracking-[1px]">
               {description}
