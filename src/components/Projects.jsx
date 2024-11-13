@@ -25,14 +25,16 @@ const ProjectCard = ({
       } flex items-center justify-center min-w-[150px] sm:min-w-[170px] md:min-w-[200px] 
       min-h-[280px] sm:min-h-[320px] md:min-h-[360px] cursor-pointer card-shadow`}
       onClick={() => handleClick(id)}>
-      <div
-        className="absolute top-0 left-0  bg-jetLight 
-      h-full w-full box-size opacity-[0.5] rounded-[24px]"></div>
-      <img
+    
+  <img
         src={image}
         alt={name}
-        className="absolute w-full h-full object-cover rounded-[25px]"
+        className="absolute w-full h-full object-cover rounded-[27px]
+        "
       />
+
+    
+    
 
       {active !== id ? (
         <div className="flex items-center justify-start pr-[1rem] sm:pr-[2rem] md:pr-[2.5rem]">
@@ -43,7 +45,7 @@ const ProjectCard = ({
       ) : (
         <>
           <div
-            className="absolute bottom-0 p-4 sm:p-6 md:p-8 justify-start w-full 
+            className=" bg-red-500 absolute bottom-0 p-4 sm:p-6 md:p-8 justify-start w-full 
             flex-col bg-white rounded-b-[24px] z-20">
             <div className="absolute inset-0 flex justify-end m-2 sm:m-3">
               

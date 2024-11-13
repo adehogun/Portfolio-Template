@@ -92,14 +92,7 @@ const Experience = () => {
               </div>
             }>
           <button
-  className="flex justify-between live-demo 
-              text-[1px] sm:text-[18px] text-timberWolf 
-              font-bold font-beckman items-center py-4 px-5 
-              whitespace-nowrap gap-2 
-              w-auto  rounded-[10px] bg-jetLight 
-              sm:mt-[22px]  hover:bg-battleGray 
-              hover:text-eerieBlack transition duration-[0.2s] 
-              ease-in-out"
+  className="text-black font-bold"
   onClick={() =>
     window.open(
       'cv_ogunfusika.pdf', // paste the link to your resume here

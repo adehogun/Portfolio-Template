@@ -349,3 +349,87 @@ Global Styles */
 .mongo {
   width: 72%;
 }
+
+.hero-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  width: 100%;
+max-height: 100%;
+height: 650px;
+  background-color: rgb(231, 232, 233);
+}
+
+@media (max-width: 380px) {
+  .hero-container {
+    margin-bottom: 0;
+    margin-top: 0;
+    height: 600px;
+  
+  }
+
+  .section-wrapper span {
+    width: 150px;
+  }
+
+}
+
+.section-wrapper {
+  display: flex;
+  gap: 20px;
+  justify-content: center;align-items: center;
+  align-self: center;
+  flex-direction:column;
+  width: 100%;
+  box-shadow: 3px;
+}
+
+.section-wrapper span {
+  width: 100px;
+}
+
+
+.hero-content-2 {
+  background-color: #af4261;
+  width: 40%;
+  height: 50px;
+  font: bolder;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.hero-content-2 p {
+  font: bolder;
+
+}
+
+.image-wrapper  {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  border-bottom: 2px solid rgb(155, 150, 150);
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.image-wrapper  {
+  
+}
+
+.image-wrapper img {
+  width: 260px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 260px;
+  border-radius: 80%;
+  margin-top: 20px;
+}
+
