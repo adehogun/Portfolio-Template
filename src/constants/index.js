@@ -28,11 +28,10 @@ import {
   kelhel,
   microverse,
 
-
-
-  
-  
 } from '../assets';
+
+import myFreelance from "../assets/company/freelancer.png"
+
 
 import myPic from "../assets/company/mypic.png";
 
@@ -136,7 +135,16 @@ const technologies = [
   },
 ];
 
+
+
 const experiences = [
+  {
+    title: 'Web App Developer',
+    company_name: 'Freelance',
+    icon: myFreelance,
+    iconBg: '#333333',
+    date: 'Jun 2024 - till date',
+  },
   {
     title: 'Learning Program Designer',
     company_name: 'Frankfurt School of Finance and Management',
