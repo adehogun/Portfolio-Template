@@ -21,7 +21,7 @@ const Navbar = () => {
   return (
     <nav
       className={`${styles.paddingX} w-full flex items-center py-2 fixed 
-      top-0 z-20 bg-cyan-500 sm:opacity-[0.97] xxs:h-[12vh]`}>
+      top-0 z-20 bg-black sm:opacity-[0.97] xxs:h-[12vh]`}>
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <Link
           to="/"
@@ -37,8 +37,8 @@ const Navbar = () => {
             <li
               key={nav.id}
               className={`${
-                active === nav.title ? 'text-black' : 'text-eerieBlack'
-              } hover:text-taupe text-[21px] font-medium font-mova 
+                active === nav.title ? 'text-black' : 'text-white'
+              } hover:text-taupe text-[18px] font-medium font-mova 
                 uppercase tracking-[3px] cursor-pointer nav-links`}
               onClick={() => handleScroll(nav.id)}>
               <a href={`#${nav.id}`}>{nav.title}</a>

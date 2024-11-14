@@ -9,9 +9,9 @@ const Hero = () => {
   return (
     <div className='hero-container'>
           <div className='section-wrapper'>
-               <h1 className="text-black font-poppins text-4xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
+               <h1 className="text-white font-poppins text-4xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
               Hi, there! <br />
-              <span className="text-black font-bold">
+              <span className="text-white font-bold">
                 I'm Adewale
               </span>
             </h1>
