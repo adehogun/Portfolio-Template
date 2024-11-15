@@ -16,7 +16,7 @@ import myFigMa from "../assets/tech/figma.png";
 const Tech = () => {
   return (
     <div className='tech-container'>
-      <div className='items-center'>
+      <div className='items-center content-stacks' >
         <motion.div variants={textVariant()}>
           <p className={styles.sectionSubText}>Tech</p>
           <h2 className={styles.sectionHeadTextLight}>Stacks</h2>
@@ -79,13 +79,7 @@ const Tech = () => {
           </Button>
         </div>
 
-        <div className="flex flex-wrap justify-center gap-10 mt-14 hover-name">
-          {technologies.map((technology) => (
-            <div className="w-28 h-28" key={technology.name}>
-              {/* Add technology-related content here */}
-            </div>
-          ))}
-        </div>
+      
       </div>
     </div>
   );

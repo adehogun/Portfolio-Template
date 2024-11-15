@@ -253,19 +253,17 @@
 
 Responsiveness about
 
-.tech-items-wrapper {
-  margin: 2px;
-  margin-bottom: 4%;
-}
+
 
 
 .big-picture {
   /* margin-top: 19%; */
   margin-right: 70px;
   width: 40%;
-  
 
 }
+
+
 
 
 Global Styles */
@@ -503,16 +501,7 @@ height: 700px;
   padding: 40px 20px;
 }
 
-.section {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
+
 
 .icon {
   width: 50px;
@@ -573,4 +562,133 @@ p {
   font-weight: bold;
   padding-bottom: 20px;
   color: #333;
+}
+.portfolio-container {
+  display: grid;
+  padding: 95px;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: repeat(2, 1fr);
+grid-column-gap: 13px;
+grid-row-gap: 4px;
+width: 100%;
+}
+
+
+.portfolio-container img {
+  width: 100%;
+  height: 300px; 
+  /* padding: 20px; */
+  object-fit: cover; 
+  border-radius: 2px; /* Optional: for consistent rounded corners */
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 12px; /* Controls spacing between buttons */
+  margin: 0;
+  margin-top: 4px;
+
+}
+
+
+.button-container button {
+  width: 100px;
+  height: 25px;
+  background-color: #ef4444; /* Tailwind red-500 */
+  border: 2px solid transparent;
+  color: white;
+  font-weight: 600;
+ }
+
+ .project-container {
+  width: 100%;
+  margin-top: 100px;
+  height: 900px;
+
+ }
+
+ @media (max-width: 765px) {
+  .project-container {
+    margin-top:600px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .portfolio-container  {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 0px;
+    margin-top: 0;
+  }
+
+  .project-container .flex {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .portfolio-1-container {
+    width: 100%;
+
+  }
+
+  
+  .portfolio-1-container img {
+      padding: 0px;
+      width: 300px;
+      height: 98px;
+      margin: 0;
+  }
+
+    
+  .portfolio-2-container img {
+    padding: 0px;
+    width: 300px;
+    height: 98px;
+    margin: 0;
+}
+.button-container button {
+  height: 19px;
+  font-size: 0.5rem;
+}
+
+  .tech-container {
+    height: 1100px;
+    width: 100%;
+    margin-bottom: 0px;
+  }
+
+  .header-container  h3{
+    font-size: 1rem;
+  }
+
+  .content-container p {
+    font-size: smaller;
+  }
+ }
+
+ .description-container {
+ width: 100%;
+ margin-top: 0;
+
+ }
+
+ .header-container {
+  display: flex;
+  width: 100%;
+  margin: 0;
+  justify-content: justify;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+}
+
+.content-container {
+  margin-top: 0; /* Controls spacing between header and content */
+  background-color: #b4b1b1;
 }
