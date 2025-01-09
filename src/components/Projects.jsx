@@ -7,6 +7,7 @@ import myOlic from "../assets/projects/olic.png";
 
 import { projects } from '../constants';
 import { fadeIn, textVariant, staggerContainer } from '../utils/motion';
+import SerenaWebpage from "../assets/personal/simple_web.png";
 
 
 
@@ -68,7 +69,7 @@ const Projects = () => {
           
            
             
-            </div>
+        
 <div className='button-container text-sm '>
 <button className='hover:bg-black active:bg-black'> 
   <a href='https://github.com/codeUWE/breakItDown'target="_blank" rel="noopener noreferrer">
@@ -109,7 +110,7 @@ const Projects = () => {
            
             
             </div>
-
+    </div>
 <div className='button-container text-sm'>
 <button className='hover:bg-black active:bg-black'>
   <a href="https://github.com/adehogun/olic" target="_blank" rel="noopener noreferrer">
@@ -124,14 +125,36 @@ const Projects = () => {
               </a>
          
            </button>
+
+        
 </div>
-            
+
+
+             
            </div>
-          
-        </div>
+           <div className='website-project-container mb-2 flex justify-center p-6'>
+          <p>Simple Website Project</p>
+
+          <img src={SerenaWebpage} alt="simple web project" />
+
+          <div className='button-container text-sm'>
+             <button className='hover:bg-black active:bg-black'>
+  <a href="https://serenahart.de/" target="_blank" rel="noopener noreferrer">
+<p className='text-white font-bold'>View</p>
+
+  </a>
+
+</button> 
+          </div>
+
+           </div>
+         
+        </div> 
+        
       </div>
  
-        </div>
+ 
+  </div>
  
    
   );
