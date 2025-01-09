@@ -571,27 +571,32 @@ grid-template-rows: repeat(2, 1fr);
 grid-column-gap: 13px;
 grid-row-gap: 4px;
 width: 100%;
+
 }
 
 
 .portfolio-container img {
-  width: 100%;
-  height: 300px; 
-  /* padding: 20px; */
-  object-fit: cover; 
-  border-radius: 2px; /* Optional: for consistent rounded corners */
+  width: 100%; /* Ensure the image fills its container width */
+  height: 280px; /* Set consistent height */
+  object-fit: cover; /* Crop and fill the area without distortion */
+  border-radius: 2px; /* Optional: Consistent rounded corners */
+  padding: 0; /* Remove padding for consistent image alignment */
+  margin: 0; /* Remove any default margins to align images */
 }
 
 .button-container {
   display: flex;
   justify-content: center;
   gap: 12px; /* Controls spacing between buttons */
-  margin: 0;
-  margin-top: 4px;
+  margin: 40px;
+  margin-top: 0px;
 
 }
 
-
+.website-project-container > div {
+  background-color: rgb(245, 39, 39);
+  
+}
 .button-container button {
   width: 100px;
   height: 25px;
@@ -604,10 +609,33 @@ width: 100%;
  .project-container {
   width: 100%;
   margin-top: 100px;
-  height: 900px;
+  height: 1300px;
+
 
  }
 
+.website-project-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+
+
+  
+ }
+
+
+ .website-project-container img {
+  width: 100%; /* Ensure the image fills its container width */
+  height: 250px; /* Set consistent height */
+  object-fit: cover; /* Crop and fill the area without distortion */
+  border-radius: 2px; /* Optional: Consistent rounded corners */
+  padding: 0; /* Remove padding for consistent image alignment */
+  margin: 0; /* Remove any default margins to align images */
+
+ }
  @media (max-width: 765px) {
   .project-container {
     margin-top:600px;
@@ -626,7 +654,10 @@ width: 100%;
     flex-direction: column;
     margin-bottom: 0px;
     margin-top: 0;
+   
+   
   }
+
 
   .project-container .flex {
     margin-top: 0;
@@ -646,6 +677,16 @@ width: 100%;
       margin: 0;
   }
 
+  
+ .website-project-container img {
+  padding: 0px;
+      width: 300px;
+      height: 108px;
+      margin: 0;
+    
+
+ }
+
     
   .portfolio-2-container img {
     padding: 0px;
@@ -654,9 +695,23 @@ width: 100%;
     margin: 0;
 }
 .button-container button {
-  height: 19px;
-  font-size: 0.5rem;
+  height: 40px;
+  font-size: 0.9rem;
 }
+
+.website-project-container button  {
+  height: 40px;
+  /* font-size: 0.9rem; */
+
+}
+
+.website-project-container p {
+ 
+  font-size: 0.9rem;
+
+}
+
+
 
   .tech-container {
     height: 1100px;
